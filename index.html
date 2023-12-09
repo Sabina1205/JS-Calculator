@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="styles.css">
+    <title>JS Calculator</title>
+</head>
+    <body>
+        <div class="container-fluid my-5">
+
+            <div class="row text-center">
+                <div class="col">
+                    <h1>JS Calculator</h1>
+                </div>
+            </div>
+            
+            <div class="row text-center">
+                <div class="col-8">
+                    <div id="display" class="big-info bg-dark text-center text-white my-4 py-4"></div>
+                </div>
+                <div class="col-4">
+                    <div id="secondDisplay" class="big-info bg-secondary text-center my-4 py-4"></div>
+                </div>
+            </div>
+            
+            <div class="row text-center">
+                <div class="col-4">
+                    <a id="zero" class="btn btn-block btn-primary" onclick="updateDisplay(0)">0</a>
+                    <a id="one" class="btn btn-block btn-primary" onclick="updateDisplay(1)">1</a>
+                    <a id="two" class="btn btn-block btn-primary" onclick="updateDisplay(2)">2</a>
+                    <!-- Equal -->
+                    <a id="equals" class="btn btn-block btn-danger" onclick="updateDisplay('equals')">=</a>
+                </div>
+            
+                <div class="col-4">
+                    <a id="three" class="btn btn-block btn-primary" onclick="updateDisplay(3)">3</a>
+                    <a id="four" class="btn btn-block btn-primary" onclick="updateDisplay(4)">4</a>
+                    <a id="five" class="btn btn-block btn-primary" onclick="updateDisplay(5)">5</a>
+                    <a id="clear" class="btn btn-block btn-warning" onclick="clearDisplay()">C</a>
+                </div>
+           
+                <div class="col-4">
+                    <a id="six" class="btn btn-block btn-primary" onclick="updateDisplay(6)">6</a>
+                    <a id="seven" class="btn btn-block btn-primary" onclick="updateDisplay(7)">7</a>
+                    <a id="eight" class="btn btn-block btn-primary" onclick="updateDisplay(8)">8</a>
+                    <a id="nine" class="btn btn-block btn-primary" onclick="updateDisplay(9)">9</a>
+                </div>
+            </div>
+        
+            <!-- Operators -->
+            <div class="row text-center my-3">
+                <div class="col-2">
+                    <a id="add" class="btn btn-block btn-secondary" onclick="updateDisplay('add')">+</a>
+                </div>
+                <div class="col-2">
+                    <a id="subtract" class="btn btn-block btn-secondary" onclick="updateDisplay('subtract')">-</a>
+                </div>
+                <div class="col-2">
+                    <a id="multiply" class="btn btn-block btn-secondary" onclick="updateDisplay('multiply')">*</a>
+                </div>
+                <div class="col-2">
+                    <a id="divide" class="btn btn-block btn-secondary" onclick="updateDisplay('divide')">/</a>
+                </div>
+                <div class="col-2">
+                    <a id="decimal" class="btn btn-block btn-secondary" onclick="updateDisplay('decimal')">.</a>
+                </div>
+                <div class="col-2">
+                    <a id="negative-value" class="btn btn-block btn-secondary" onclick="updateDisplay('negative-value')">+/-</a>
+                </div>
+            </div>
+            
+        </div>
+        <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
